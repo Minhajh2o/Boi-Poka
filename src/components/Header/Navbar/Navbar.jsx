@@ -28,8 +28,9 @@ const Navbar = () => {
       >
         <Links />
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      <div className="navbar-end flex items-center gap-2">
+        <a className="btn bg-green-500">Sign In</a>
+        <a className="btn bg-blue-500">Sign Up</a>
       </div>
     </div>
   );
