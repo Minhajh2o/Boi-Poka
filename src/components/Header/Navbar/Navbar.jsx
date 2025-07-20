@@ -30,8 +30,8 @@ const Navbar = () => {
         <Links />
       </div>
       <div className="navbar-end flex items-center gap-2">
-        <a className="btn bg-green-500 hover:bg-green-600 text-white">Sign In</a>
-        <a className="btn bg-blue-500 hover:bg-blue-600 text-white">Sign Up</a>
+        <a className="btn bg-green-500 hover:bg-green-600 text-white transition-colors duration-300">Sign In</a>
+        <a className="btn bg-blue-500 hover:bg-blue-600 text-white transition-colors duration-300">Sign Up</a>
       </div>
     </div>
   );

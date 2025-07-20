@@ -22,10 +22,10 @@ const BookDetails = () => {
         <>
           <div className="mt-6 md:mt-12 mb-12 md:mb-24">
             <div className="flex flex-col lg:flex-row gap-6 lg:gap-12">
-              <figure className="w-full lg:w-1/2 py-8 md:py-20 bg-gray-100 rounded-lg">
+              <figure className="flex items-center justify-center w-full md:w-1/2 py-8 md:py-20 bg-gray-100 rounded-lg">
                 <img
                   src={image}
-                  className="w-48 md:w-96 mx-auto h-full rounded-lg object-cover"
+                  className="w-48 md:w-96 h-80 md:h-[580px] rounded-lg object-cover"
                 />
               </figure>
               <div className="w-full lg:w-1/2 space-y-4 md:space-y-6">
