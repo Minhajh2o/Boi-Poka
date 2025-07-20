@@ -1,7 +1,7 @@
 
 const PagesToRead = () => {
     return (
-        <div>
+        <div className="px-4">
             <h1 className='text-4xl font-bold'>Pages To Read</h1>
             <p className='text-lg'>Here you can find all the pages you have to read.</p>
         </div>

@@ -8,6 +8,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  
   return (
     <div className="navbar p-4 md:p-0 bg-base-100">
       <div className="navbar-start">
@@ -18,7 +19,7 @@ const Navbar = () => {
             <HiMenuAlt1 className="text-2xl" />
           )}
         </div>
-        <a href="/" className="btn btn-ghost text-2xl">Boi Poka</a>
+        <a href="/" className="text-2xl font-bold ml-2 ">Boi Poka</a>
       </div>
       <div
         className={`absolute duration-700 ease-in-out py-2 px-4 rounded-lg text-sm bg-transparent backdrop-blur-md shadow-lg
@@ -29,8 +30,8 @@ const Navbar = () => {
         <Links />
       </div>
       <div className="navbar-end flex items-center gap-2">
-        <a className="btn bg-green-500">Sign In</a>
-        <a className="btn bg-blue-500">Sign Up</a>
+        <a className="btn bg-green-500 hover:bg-green-600 text-white">Sign In</a>
+        <a className="btn bg-blue-500 hover:bg-blue-600 text-white">Sign Up</a>
       </div>
     </div>
   );

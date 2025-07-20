@@ -9,7 +9,8 @@ import Root from './components/Root/Root';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Home from './components/Body/Home/Home';
 import ListedBooks from './components/Body/ListedBooks/ListedBooks';
-import PagesToRead from './components/Body/PagestToRead/PagesToRead';
+import PagesToRead from './components/Body/PagesToRead/PagesToRead';
+import BookDetails from './components/Body/BookDetails/BookDetails';
 
 const router = createBrowserRouter([
   {
@@ -24,10 +25,16 @@ const router = createBrowserRouter([
       {
         path: "/listed-books",
         element: <ListedBooks />,
+        loader: () => fetch("booksData.json"),
       },
       {
         path: "/pages-to-read",
         element: <PagesToRead />,
+      },
+      {
+        path: "/books/:bookId",
+        element: <BookDetails />,
+        loader: () => fetch("booksData.json"),
       },
     ],
   },
