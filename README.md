@@ -48,6 +48,7 @@ Check out the live app from any of the links below:
 
 ### 📁 Project Folder Structure (Simplified)
 
+```text
 /
 ├── public/
 │   └── booksData.json       # Static data for books
@@ -87,6 +88,7 @@ Check out the live app from any of the links below:
 ├── index.html
 ├── package.json
 └── README.md
+```
 
 ---
 
