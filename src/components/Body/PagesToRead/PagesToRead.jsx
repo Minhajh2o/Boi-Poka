@@ -1,10 +1,32 @@
+import React, { useEffect, useState } from 'react';
+import { getWishlist } from '../../Utilities/addToDo';
+import { useLoaderData } from 'react-router-dom';
+import CustomBarChart from '../../CustomBarChart/CustomBarChart';
+import Empty from '../Empty/Empty';
 
 const PagesToRead = () => {
+      const [wishlist, setWishlist] = useState([]);
+      const data = useLoaderData();
+
+      useEffect(() => {
+        const storedWishlist = getWishlist();
+        if (storedWishlist && data) {
+          const getWishlistInt = storedWishlist.map((id) => parseInt(id));
+          const filteredWishlist = data.filter((book) =>
+            getWishlistInt.includes(book.bookId)
+          );
+          setWishlist(filteredWishlist);
+        }
+      }, [data]);
+
     return (
-        <div className="px-4">
-            <h1 className='text-4xl font-bold'>Pages To Read</h1>
-            <p className='text-lg'>Here you can find all the pages you have to read.</p>
-        </div>
+        <>
+            {wishlist.length > 0 ? (
+              <CustomBarChart wishlist={wishlist} />
+            ) : (
+              <Empty />
+            )}
+        </>
     );
 };
 
