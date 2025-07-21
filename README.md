@@ -27,16 +27,6 @@ Check out the live app from any of the links below:
 
 ---
 
-### 🖼️ Screenshot
-
-| Desktop View | Mobile View |
-|--------------|-------------|
-| ![Desktop Screenshot](./public/desktop.png) | ![Mobile Screenshot](./public/mobile.png) |
-
-> *(Make sure to replace the image paths if you add screenshots)*
-
----
-
 ### 🔧 Tech Stack
 
 - **Framework:** React.js (Vite)
