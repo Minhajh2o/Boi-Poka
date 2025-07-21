@@ -66,7 +66,7 @@ const ListedBooks = () => {
             role="button"
             className="btn m-1 bg-green-500 hover:bg-green-600 transition-all duration-300"
           >
-            {sort ? `Sort by ${sort}` : "Sort by"}
+            {sort ? `Sort by ${sort}` : "Sort by ▽"}
           </div>
           <ul
             tabIndex={0}
